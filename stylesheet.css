@@ -1,78 +1,72 @@
-*{
-    --btnColor:#CAF0F8;
-    --calcColor:#0077B6;
-    box-sizing:border-box;
-
+* {
+  --btnColor: #caf0f8;
+  --calcColor: #0077b6;
+  box-sizing: border-box;
 }
 
-html{
-
+body {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  background-color: #03045e;
+}
+h1 {
+  text-align: center;
+  color: white;
 }
 
-
-body{
-    font-size: 30px;
-    margin:0;
-    padding: 0;
-    background-color: #03045E;
+.calc-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
-h1{
-    text-align: center;
-    color:white;
-}
-
-.calc-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    
-
-}
-.calculator{
-    max-width: 550px;
-    background-color:var(--calcColor) ;
-    padding:20px;
-    border-radius: 30px;
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, .3);
+.calculator {
+  max-width: 550px;
+  background-color: var(--calcColor);
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
 }
 
-.display{
-    height:100px;
-    background-color: rgb(255, 255, 255);
-    padding:5px;
-    margin: 40px 15px 15px 15px;
-    border-radius: 10px;
-    display: flex;
+.display {
+  /* display: flex;
     align-items: center;
     justify-content: flex-end;
-    font-size: 4rem;
+ */
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  padding: 5px;
+  margin: 40px 15px 15px 15px;
+  border-radius: 10px;
+  font-size: 4rem;
+  word-wrap: break-word;
+  text-align: right;
 }
 
-.button-conatiner{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+.button-conatiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.input-btn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--btnColor);
-    width: 80px;
-    height: 80px;
-    margin:20px;
-    border-radius: 40px;
-    box-shadow: 3px 4px 2px 3px  rgba(0,0,0,0.7);
-
+.input-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--btnColor);
+  width: 80px;
+  height: 80px;
+  margin: 20px;
+  border-radius: 40px;
+  box-shadow: 3px 4px 2px 3px rgba(0, 0, 0, 0.7);
 }
 
-.input-btn:hover{
-    background-color: rgb(218, 218, 218);
-    box-shadow: 0px 0px 2px 1px  rgba(0,0,0,0.7);
-
+.input-btn:hover {
+  background-color: rgb(218, 218, 218);
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.7);
+  box-shadow: inset 0px 3px 1px 4px rgba(0, 0, 0, 0.7);
 }
 .btn-equal {
-    width:200px;
+  width: 200px;
 }
